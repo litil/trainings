@@ -4,12 +4,21 @@
   "description": "This is an Express application, created for a NodeJS training.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint index.js"
   },
   "keywords": [
     "Node",
     "Express"
   ],
   "author": "guillaume.p.lambert@gmail.com",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
 }
