@@ -1,0 +1,15 @@
+{
+  "name": "express-app-node-training",
+  "version": "1.0.0",
+  "description": "This is an Express application, created for a NodeJS training.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node",
+    "Express"
+  ],
+  "author": "guillaume.p.lambert@gmail.com",
+  "license": "ISC"
+}
