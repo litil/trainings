@@ -3,6 +3,10 @@ var Author = require('../models/author');
 var Genre = require('../models/genre');
 var BookInstance = require('../models/bookinstance');
 
+const { body,validationResult } = require('express-validator/check');
+const { sanitizeBody } = require('express-validator/filter');
+
+
 var async = require('async');
 
 exports.index = function(req, res) {
@@ -98,4 +102,17 @@ exports.book_update_get = function(req, res) {
 // Handle book update on POST.
 exports.book_update_post = function(req, res) {
     res.send('NOT IMPLEMENTED: Book update POST');
+};
+
+// Display list of all Books.
+exports.api_book_list = function(req, res) {
+
+  Book.find({}, 'title author')
+    .populate('author')
+    .exec(function (err, list_books) {
+      if (err) { return next(err); }
+      //Successful, so send data
+      res.send({ data: list_books});
+    });
+
 };
