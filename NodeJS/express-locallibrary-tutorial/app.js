@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var users = require('./routes/users');
 var catalog = require('./routes/catalog');
+var api = require('./routes/api');
 
 var app = express();
 
@@ -15,9 +16,12 @@ var app = express();
 //Import the mongoose module
 var mongoose = require('mongoose');
 
-//Set up default mongoose connection
-var mongoDB = 'mongodb://127.0.0.1/local_library';
-mongoose.connect(mongoDB);
+//Set up mongoose connection
+if(process.env.NODE_ENV === 'test') {
+    mongoose.connect('mongodb://127.0.0.1/local_library_test')
+} else {
+    mongoose.connect('mongodb://127.0.0.1/local_library')
+}
 // Get Mongoose to use the global promise library
 mongoose.Promise = global.Promise;
 //Get the default connection
@@ -42,6 +46,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 app.use('/catalog', catalog);
+app.use('/api', api);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
