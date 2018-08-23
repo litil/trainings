@@ -1,6 +1,9 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
+
 import Transaction from '../../molecules/Transaction';
+
+import './styles.css';
 
 class TransactionsList extends Component {
     static propTypes = {
@@ -13,10 +16,11 @@ class TransactionsList extends Component {
 
         if (!dailyTransactions) return 'No transactions yet'
 
-        return r = <div>
+        return <div className="TransactionList-container">
             { Object.entries(dailyTransactions).map(([date, transactionsArray]) => {
-                return <div key={`transaction-group-${date}`}>
-                    <div>{ date }</div>
+                return <div className="TransactionList-row"
+                        key={`transaction-group-${date}`}>
+                    <div className="TransactionList-date">{ date }</div>
                     { transactionsArray.map((t, i) => {
                         return <Transaction {...t} key={`transaction-${i}`} />
                     })}

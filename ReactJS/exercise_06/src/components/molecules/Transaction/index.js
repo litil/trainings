@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 
+import './styles.css';
+
 class Transaction extends Component {
     static propTypes = {
         /** Label, open text */
@@ -18,10 +20,15 @@ class Transaction extends Component {
 
         const displayCategory = subCategory || category
 
-        return <div>
-            <div>{label}</div>
-            <div>{displayCategory}</div>
-            <div>{price}</div>
+        return <div className="Transaction-container">
+            <div className="Transaction-left">
+                <div className="Transaction-icon"> {category[0].toUpperCase() }</div>
+                <div className="Transaction-identifier">
+                    <div className="Transaction-label">{label}</div>
+                    <div className="Transaction-subCategory">{displayCategory}</div>
+                </div>
+            </div>
+            <div className="Transaction-price">{price}</div>
         </div>
     }
 }
