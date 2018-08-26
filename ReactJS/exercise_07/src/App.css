@@ -1,0 +1,17 @@
+.App {
+  display: flex;
+  flex-flow: column;
+  background: linear-gradient(to left, #DE6262 , #FFB88C);
+  min-height: 100%;
+}
+
+.App-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}

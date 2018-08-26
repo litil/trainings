@@ -1,0 +1,19 @@
+.TransactionList-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.TransactionList-row {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.TransactionList-date {
+    font-size: 1.1em;
+    font-style: italic;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    color: white;
+}
