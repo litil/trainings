@@ -1,9 +1,10 @@
 # Exercise 06 - Create main transaction components
 
-1. Run "npx create-react-app exercise_06"
-2. Create the elements, molecules, organisms and pages folders
-3. Fetch the list of transactions from Github
-4. Create Transaction and TransactionList components
-5. Display the list of transactions
-6. Improve the UI using Flexbox
-7. Add a transaction creation form
+1. Create exercise_07 by copying exercise_06
+2. Install react and react-redux
+3. Create action types, in actions/actionTypes.js
+4. Create the root reducer and the createTransactionReducer, in reducers/
+5. Create the createTransactionRequest action, in actions/
+6. Connect the action and the reducer to the pages
+7. Display the transaction from the reducers
+8. Call the action createTransactionRequest when the user clicks on submit

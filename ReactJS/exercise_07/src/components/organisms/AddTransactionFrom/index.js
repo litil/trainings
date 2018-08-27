@@ -18,13 +18,12 @@ class AddTransactionForm extends Component {
 
     handleChange = (key) => (event) => {
         this.setState({ [key]: event.target.value })
-        console.log(key,  event.target.value)
     }
 
     handleSubmit = (event) => {
         event.preventDefault();
         const { ...transaction } = this.state
-        console.log('transaction', transaction)
+        this.props.createTransaction(transaction)
     }
 
     handleReset = (event) => {
