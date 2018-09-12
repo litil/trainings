@@ -5,12 +5,21 @@ import PropTypes from 'prop-types'
 import TransactionsList from '../../organisms/TransactionsList';
 import PageTitle from '../../elements/PageTitle';
 
+import { listTransactionsRequest } from '../../../actions/listTransactionsAction'
+
 import './styles.css';
 
 class TransactionsListPage extends Component {
     static propTypes = {
         /** Transaction data */
-        data: PropTypes.object.isRequired
+        data: PropTypes.object,
+        /** Function performing an API call to list the transactions */
+        listTransactions: PropTypes.func.isRequired
+    }
+
+    componentDidMount = () => {
+        const { listTransactions } = this.props
+        listTransactions()
     }
 
     render() {
@@ -25,7 +34,7 @@ class TransactionsListPage extends Component {
 
 const mapDispatchToProps = dispatch => {
     return ({
-
+        listTransactions: () => dispatch(listTransactionsRequest())
     })
 }
 

@@ -14,7 +14,7 @@ class AddTransactionPage extends Component {
         /** Create transaction function */
         createTransaction: PropTypes.func.isRequired
     }
-    
+
     render() {
         const { createTransaction } = this.props
 

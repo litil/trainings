@@ -8,7 +8,7 @@ import './styles.css';
 class TransactionsList extends Component {
     static propTypes = {
         /** List of transactions, grouped by date  */
-        dailyTransactions: PropTypes.object.isRequired
+        dailyTransactions: PropTypes.object
     }
 
     render() {

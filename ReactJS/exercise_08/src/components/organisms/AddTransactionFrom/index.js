@@ -23,6 +23,7 @@ class AddTransactionForm extends Component {
         event.preventDefault();
         const { ...transaction } = this.state
         this.props.createTransaction(transaction)
+        this.setState({ name: '', date: '', amount: '', category: '', subCategory: ''})
     }
 
     handleReset = (event) => {

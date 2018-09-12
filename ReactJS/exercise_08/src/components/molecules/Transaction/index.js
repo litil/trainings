@@ -12,7 +12,7 @@ class Transaction extends Component {
         /** Category, enum */
         subCategory: PropTypes.oneOf(['Restaurant', 'Groceries', 'Rent', 'Furniture']).isRequired,
         /** Price, enum */
-        price: PropTypes.number.isRequired
+        price: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
     }
 
     render() {
