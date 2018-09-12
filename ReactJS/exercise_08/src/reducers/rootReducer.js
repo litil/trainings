@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
-import createTransactionReducer from './createTransactionReducer'
+import transactionReducer from './transactionReducer'
 
 const rootReducer = combineReducers({
-    createTransactionReducer
+    transactionReducer
 })
 
 export default rootReducer

@@ -56,7 +56,7 @@ const initialState = {
  * This method handles the createTransaction actions. It returns an object which will
  * be set in the data entry of the reducer.
  */
-const createTransactionReducer = (state = initialState, action) => {
+const transactionReducer = (state = initialState, action) => {
     switch (action.type) {
         case actionTypes.CREATE_TRANSACTION_REQUEST: {
             const transaction = action.transaction
@@ -97,4 +97,4 @@ const createTransactionReducer = (state = initialState, action) => {
             return state
     }
 }
-export default createTransactionReducer;
+export default transactionReducer;

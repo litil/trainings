@@ -56,7 +56,7 @@ const initialState = {
  * This method handles the createTransaction actions. It returns an object which will
  * be set in the data entry of the reducer.
  */
-const createTransactionReducer = (state = initialState, action) => {
+const transactionReducer = (state = initialState, action) => {
     switch (action.type) {
         case actionTypes.CREATE_TRANSACTION_REQUEST: {
             const transaction = action.transaction
@@ -74,27 +74,8 @@ const createTransactionReducer = (state = initialState, action) => {
                 isWorking: true
             }
         }
-        case actionTypes.CREATE_TRANSACTION_SUCCESS: {
-            // formatting received response
-            const data = action.response.results
-
-            return {
-                ...state,
-                isWorking: false,
-                data,
-                lastUpdated: action.receivedAt
-            }
-        }
-        case actionTypes.CREATE_TRANSACTION_FAILURE: {
-            return {
-                ...state,
-                isWorking: false,
-                data: undefined,
-                lastUpdated: action.receivedAt
-            }
-        }
         default:
             return state
     }
 }
-export default createTransactionReducer;
+export default transactionReducer;

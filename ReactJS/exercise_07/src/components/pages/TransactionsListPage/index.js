@@ -8,8 +8,9 @@ import PageTitle from '../../elements/PageTitle';
 import './styles.css';
 
 class TransactionsListPage extends Component {
-    constructor(props) {
-        super(props)
+    static propTypes = {
+        /** Transaction data */
+        data: PropTypes.object.isRequired
     }
 
     render() {
@@ -29,10 +30,10 @@ const mapDispatchToProps = dispatch => {
 }
 
 const mapStateToProps = state => {
-    const { createTransactionReducer } = state
+    const { transactionReducer } = state
 
-    const data = createTransactionReducer ? createTransactionReducer.data : {}
-    const isWorking = createTransactionReducer ? createTransactionReducer.isWorking : false
+    const data = transactionReducer ? transactionReducer.data : {}
+    const isWorking = transactionReducer ? transactionReducer.isWorking : false
 
     return { data, isWorking }
 }

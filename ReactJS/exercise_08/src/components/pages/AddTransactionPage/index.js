@@ -10,10 +10,11 @@ import PageTitle from '../../elements/PageTitle';
 import './styles.css';
 
 class AddTransactionPage extends Component {
-    constructor(props) {
-        super(props)
+    static propTypes = {
+        /** Create transaction function */
+        createTransaction: PropTypes.func.isRequired
     }
-
+    
     render() {
         const { createTransaction } = this.props
 
@@ -31,10 +32,10 @@ const mapDispatchToProps = dispatch => {
 }
 
 const mapStateToProps = state => {
-    const { createTransactionReducer } = state
+    const { transactionReducer } = state
 
-    const data = createTransactionReducer ? createTransactionReducer.data : {}
-    const isWorking = createTransactionReducer ? createTransactionReducer.isWorking : false
+    const data = transactionReducer ? transactionReducer.data : {}
+    const isWorking = transactionReducer ? transactionReducer.isWorking : false
 
     return { data, isWorking }
 }

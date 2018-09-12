@@ -4,6 +4,11 @@ import PropTypes from 'prop-types'
 import './styles.css';
 
 class AddTransactionForm extends Component {
+    static propTypes = {
+        /** Create transaction function */
+        createTransaction: PropTypes.func.isRequired
+    }
+    
     constructor(props) {
         super(props)
 

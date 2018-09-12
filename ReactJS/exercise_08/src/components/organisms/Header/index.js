@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import PropTypes from 'prop-types'
 import otter from '../../../assets/otter.svg';
 
 import './styles.css';
