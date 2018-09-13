@@ -67,7 +67,7 @@ const transactionReducer = (state = initialState, action) => {
         }
         case actionTypes.LIST_TRANSACTION_SUCCESS: {
             // formatting received response
-            const data = action.response.data.filter(item => item.label != undefined)
+            const data = action.response.data.filter(item => item.label !== undefined)
             console.log(data)
             return {
                 ...state,
