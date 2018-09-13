@@ -1,0 +1,135 @@
+{
+  "transactions": [
+    {
+      "id": "1",
+      "label": "Diner @ Livio",
+      "category": "Food",
+      "subCategory": "Restaurant",
+      "price": 27.6,
+      "date": "01-09-2018"
+    },
+    {
+      "id": "2",
+      "label": "Weekly groceries Monop'",
+      "category": "Food",
+      "subCategory": "Groceries",
+      "price": 54.81,
+      "date": "01-09-2018"
+    },
+    {
+      "id": "3",
+      "label": "Date @ Mio Posto",
+      "category": "Food",
+      "subCategory": "Restaurant",
+      "price": 78.47,
+      "date": "03-09-2018"
+    },
+    {
+      "id": "4",
+      "label": "Daily groceries M&S'",
+      "category": "Food",
+      "subCategory": "Groceries",
+      "price": 14.39,
+      "date": "03-09-2018"
+    },
+    {
+      "id": "5",
+      "label": "Rent September",
+      "category": "Home",
+      "subCategory": "Rent",
+      "price": 1715.3,
+      "date": "04-09-2018"
+    },
+    {
+      "id": "6",
+      "label": "New bed mattress",
+      "category": "Home",
+      "subCategory": "Furniture",
+      "price": 349.99,
+      "date": "07-09-2018"
+    },
+    {
+      "subCategory": "Restaurant",
+      "date": "10/10/2018",
+      "id": "HXbjogm"
+    },
+    {
+      "subCategory": "",
+      "date": "",
+      "id": "lLWVzuJ"
+    },
+    {
+      "subCategory": "Restaurant",
+      "date": "11/10/2018",
+      "id": "wPUB_Dv"
+    },
+    {
+      "subCategory": "Restaurant",
+      "date": "12/10/2018",
+      "id": "SL67zyU"
+    },
+    {
+      "label": "Diner @ Livio 2",
+      "category": "Food",
+      "subCategory": "Restaurant",
+      "price": 27.6,
+      "date": "01-09-2018",
+      "id": "fshs_5Y"
+    },
+    {
+      "category": "Food",
+      "subCategory": "Restaurant",
+      "price": 27.6,
+      "date": "10-09-2018",
+      "id": "ikQ2UZT"
+    },
+    {
+      "label": "test mieux",
+      "category": "Food",
+      "subCategory": "Restaurant",
+      "price": 27.6,
+      "date": "19-12-2018",
+      "id": "iZyGrnq"
+    },
+    {
+      "label": "Test encore mieux",
+      "category": "Food",
+      "subCategory": "Restaurant",
+      "price": "89",
+      "date": "12-08-2019",
+      "id": "9WnU6DN"
+    },
+    {
+      "label": "sdfsdf",
+      "category": "Food",
+      "subCategory": "Restaurant",
+      "price": "865",
+      "date": "10-06-2019",
+      "id": "2zjIKN8"
+    },
+    {
+      "label": "sdfsdf",
+      "category": "Food",
+      "subCategory": "Restaurant",
+      "price": "865",
+      "date": "10-06-2019",
+      "id": "ary~5lI"
+    },
+    {
+      "label": "sdfsdf",
+      "category": "Food",
+      "subCategory": "Restaurant",
+      "price": "865",
+      "date": "10-06-2019",
+      "id": "pSqC5HG"
+    },
+    {
+      "label": "rrr",
+      "category": "Food",
+      "subCategory": "Restaurant",
+      "price": "753",
+      "date": "10-09-2019",
+      "id": "V7ZYIW0"
+    }
+  ]
+}

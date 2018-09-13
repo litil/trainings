@@ -1,0 +1,46 @@
+.App {
+  display: flex;
+  flex-flow: column;
+  background: linear-gradient(to left, #DE6262 , #FFB88C);
+  min-height: 100%;
+}
+
+.App-container {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.App-navigation {
+  display: flex;
+  flex-flow: column;
+  margin-top: 40px;
+  width: 20%;
+  padding: 8px;
+}
+
+.App-page-container {
+  display: flex;
+  flex-flow: column;
+  width: 80%;
+  padding: 8px;
+}
+
+.App-navigation ul {
+  list-style: none;
+}
+
+.App-navigation li {
+    margin-bottom: 16px;
+}
+
+.App-navigation-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4em;
+  font-weight: 800;
+  text-shadow: 0px 1px 2px rgba(72, 45, 38, 0.5);
+  letter-spacing: -1px;
+}
