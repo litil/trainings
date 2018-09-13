@@ -1,0 +1,56 @@
+.TransactionForm-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.TransactionForm-form {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    padding: 8px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07), 0 1px 0 0 rgba(0,0,0,0.03);
+}
+
+.TransactionForm-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 32px;
+    padding: 4px 0px;
+}
+
+.TransactionForm-icon {
+    width: 5%;
+}
+
+.TransactionForm-input {
+    border: none;
+    background-image: none;
+    height: 32px;
+    width: 90%;
+}
+
+.TransactionForm-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.TransactionForm-buttons input {
+    border-radius: 4px;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07), 0 1px 0 0 rgba(0,0,0,0.03);
+    padding: 8px 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.TransactionForm-reset {
+    background-color: grey;
+}
+
+.TransactionForm-submit {
+    background-color: green;
+}
